@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="demo1"></p>
+<body>
+    <!-- Practice for Midterm -->
+    <!-- 1) Simple LOOP -->
+    <script>
+    for ( i = 0 ; i <= 10 ; i++ ) {   // no need of let when we have not let x = 0 in its above.
+        document.write(i + "<br>" )
+    }  // DONE
+
+    // 2) ODD/EVEN LOOP  , A little more interesting . 
+    for (i = 1 ; i <= 10 ; i++ ) {
+        if (i % 2 !=0 ) {
+            document.write(i + "<br>" ) ;
+        }
+    }
+    // then EVEN LOOP .
+    for (i = 0 ; i <= 10 ; i++ ) {
+        if (i % 2 ==0 ) {
+            document.write(i + "<br>" ) ;
+        }
+    }
+    // 3) again odd loop but on inverse .
+    for (i = 10 ; i >= 1 ; i-- ) {
+        if (i % 2 != 0 )  {
+            document.write(i + "<br>" ) ;
+        }
+    }
+    // 4) Arrays in Loop .
+    const names = ["ALISHBA" , "ALISHA" , "ALI" ] ;
+    let text = " " ; // writing this is compulsory in arrays loop. 
+    for (let i = 0 ; i < names.length ; i++ ) {   // length here is compulsory.
+        text+= names[i] + ", " ;                                                            // here the NO usage of if() { } , but a text += in terms of ARRAYS :) 
+    } 
+    document.getElementById('demo1').innerHTML = (text) ;  // we'll write "text" here in the document.get...("text"),,  otherwise no doc.write  works here in ARRAYS LOOP .. its RULE.
+
+    // 5) Personal INFO in ARRAYS with OBJECTS using "c".
+    const person = [firstName="Huz", secondName="Ift", ] ;
+    for (c in person) {
+        document.write(person[c] + " ") ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JS SWITCH  -->
+    <p id="demo1"> </p>
+    <script>
+        let day;
+        switch (new Date() .getDay()) {  // these are in this pattern only which means we ordered the new date from computer and now getting the only "Date" from the new Date..
+            case 0: 
+            day = "Sunday";
+            break;
+            case 1:                                     // since we've ordered the Date() of computer so after getting its Day() we're only writtin' the day = Saturday so that it can print the live day of a computer.. 
+            day = "Monday";
+            break;
+            case 2:
+            day = "Tuesday";
+            case 3:
+            day = "Wednesday";
+            break;
+            case 4:
+            day = "Thursday";
+            break;
+            case 5:
+            day = "Friday";
+            break ;
+            case 6:
+            day = "Saturday";
+            break;
+            default:    // this is the default in case the info enter by user from output doesn't match your consequenced 
+            day = "LOOKING FORWARD TO THE WEEKEND";
+        }
+        document.getElementById('demo1').innerHTML = "Today  is " + day ;
+</script>
+</body>
+</html>

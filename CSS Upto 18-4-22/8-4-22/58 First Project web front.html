@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/58%20project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./58 First Project web front_files/icon" rel="stylesheet">
+      <style>
+          *{
+              padding: 0;
+              margin: 0;
+          }
+          .left-navbar{
+            border: 2px solid black;
+              background-color: indianred;
+              height: 28px;
+              font-size: 22px;
+              padding: 2px 0px;
+              position: sticky;
+              top:0px;
+              
+          }
+          .left-navbar a{
+              text-decoration: none;
+              color: white;
+              padding: 5px 12px;  
+          }
+          .left-navbar a:hover{
+              background-color: crimson;
+          }
+          #home {
+              background-color: teal;
+          }
+          .right-navbar {
+            float:right;
+            padding: 0px 20px;
+          }
+          .right-navbar i {
+              position: absolute;
+              right: 435px;
+              margin-top: 2px;
+              color: white;
+          }
+          .right-navbar input{
+              position: absolute;
+              right: 250px;  
+              padding: 3px 3px;
+              margin-top: 2px;
+              border: 2px solid black;
+          }
+          #mountain{
+              position: absolute;
+              right: 400px;
+              bottom: 0px;
+          }
+          #cloud1{
+            position: absolute;
+            right:350px;
+            
+          }
+          #cloud2{
+            position: absolute;
+            right:800px;
+            
+          }
+          .header{
+              background-color:aqua;
+              min-height:500px;
+              position:relative;
+          }
+          .text{
+              text-align: center;
+              padding-top: 50px;
+              line-height: 2rem;
+          }
+  
+          #swanx{
+              text-align: center;
+              padding-top: 40px;
+          }
+          #desc{
+              text-align: center;
+              width: 400px;   
+              padding-left: 470px;
+              padding-bottom: 50px;
+          }
+          #rocket{
+              padding-top: 10px;
+              padding-left: 530px;
+              padding-bottom: 10px;
+          }
+          #ernest{
+              text-align: center;
+          }
+          #ev{
+              padding-left:515px;
+          }
+          #description{
+              text-align: center;
+              width: 400px;
+              padding-bottom: 40px;
+              margin: auto;    
+          }
+          .footer{
+              text-align: center;
+              background-color: indianred;
+              padding: 50px;
+          }
+          .footer a {
+              text-decoration: none;
+              color: white;
+          }
+      </style>
+</head>
+<body>
+    <div class="left-navbar">
+        <a id="home" href="http://127.0.0.1:5500/index.html/">Home</a>
+        <a href="http://127.0.0.1:5500/contact.html">News</a>
+        <a href="http://127.0.0.1:5500/web.html">Contact</a>
+ 
+    <div class="right-navbar">
+        <i class="material-icons">search</i>
+        <input type="search" placeholder="Search here">
+        <a href="http://127.0.0.1:5500/contact.html">Search</a>
+        <a href="http://127.0.0.1:5500/index.html/">About</a>
+    </div>
+    </div>
+    <div class="header">
+        <img id="cloud2" src="./58 First Project web front_files/cloud.png">
+        <div class="text">
+        <h2>Huzaifa Iftikhar here</h2>
+        <h3>Full Stack Dev. &amp;</h3>
+        <h3>Pakistani American Business Magnate</h3>
+    </div>
+        <img id="mountain" src="./58 First Project web front_files/mountains(1).png">
+        <img id="cloud1" src="./58 First Project web front_files/cloud.png">
+    </div>
+ <section>
+     <div>
+     <h2 id="swanx">SwanX</h2>
+     <img id="rocket" src="./58 First Project web front_files/spacex.jfif">
+     <div>
+         <h3 id="desc">SwanX is Private Ltd. Rocket Manufacturing and Launching Company that will open the gate of Space for Everyone.</h3>
+     </div>
+     <div class="ernest">
+         <h2 id="ernest">Ernest</h2>
+         <img id="ev" src="./58 First Project web front_files/ev.jpg" style="width: 320px;">
+         <h3 id="description">Ernest co. is a Corporated EV company that will make electric cars globally. </h3>
+     </div>
+    </div>
+    <footer class="footer">
+        <a href="http://127.0.0.1:5500/58%20project.html#">Instagram</a>
+        <a href="http://127.0.0.1:5500/58%20project.html#">Tweeter</a>
+        <a href="http://127.0.0.1:5500/58%20project.html#">Facebook</a>
+    </footer>
+ </section>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

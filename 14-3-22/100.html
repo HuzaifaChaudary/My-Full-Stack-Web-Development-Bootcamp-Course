@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <script>
+        function myDisplayer(some) {
+            document.getElementById('demo').innerHTML = some ;
+        }
+        function myFirst() {
+            myDisplayer("Hello" + "<br>" ) ;
+        }
+        function mySecond() {
+            myDisplayer("GoodBye" + "<br>") ;
+        }
+        myFirst();
+        mySecond();
+
+        // CALL BACK Function .
+        function myDisplayer(some) {
+            document.write(some) ;
+        }
+        function myCalculator(a,b) {
+            return a + b ;
+        }
+        let sum = myCalculator(2,4) ;
+        myDisplayer (sum) ;
+        document.write("<br>") ;
+
+
+        // another way of doing call  back function .
+        function myPlayer(somee) {
+            document.write(somee) ;
+        }
+        function myCalculator(a,b) {
+            let sum = a + b ;
+            myPlayer(sum) ;
+        }
+        myCalculator(9,10) ;
+        document.write("<br>") ;
+
+</script>
+</body>
+</html>

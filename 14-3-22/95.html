@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  write second method of 94.html (check the picture) -->
+    <!-- Using object.create to create a new object   --> 
+    <script>
+ function Car(company,model,year,owner) {
+    this.company = company ;
+    this.model = model ;
+    this.year = year ;
+    this.owner = owner ;
+}
+let Car = {
+    company : "Ernest" ,
+    model : 'S7',
+    show: function( ) {
+        document.write(this.company + " " + this.model)
+    }
+}
+    let newCar =  Object.create(Car);
+    newCar.company = "Ernest" ; 
+    newCar.model = "S" ;
+    newCar.year = "2030" ;
+    newCar.model = "CEO: UZAIFA IFTIKHAR " ;
+    newCar.show();
+</script>
+</body>
+</html>

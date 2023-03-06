@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JS ARRAYS  -->
+
+    <!-- 1) SIMPLE  -->
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    <p id="demo4"> </p>
+    <p id="demo5"> </p>
+    <script>
+        // JS ARRAYS 
+        const cars = ["TOYOTA" , "BMW" , "AUDI"]
+        document.getElementById('demo1').innerHTML = (cars);
+
+        // 2) Creating arrays then providing elements 
+        const power = [ ]
+        power[0] = "Instagram";
+        power[1] = "Twitter";
+        power[2] = "Discord";
+        power.push= "FaceBook";
+        document.getElementById('demo2').innerHTML = power ;
+
+        // 3) Accessing the arrays
+        const future = ["TOYOTA" , "BMW" , "AUDI"]
+        document.getElementById('demo3').innerHTML = future[0];
+
+        // 4) changing the element 
+        const change = [ "A" , "B", "C"]
+        change[0] = "D";
+        change[1] = "E";
+        change[2] = "F";
+        document.getElementById('demo4').innerHTML = (change) ;
+
+        // 5) Object 
+        const person = {firstName:"John", lastName:"Doe", age:46};
+        // here we'll use the dot 
+        document.getElementById("demo5").innerHTML = person.firstName;
+                        // AND 
+        // document...... person.length() for the number of length used in the person array ..
+</script>
+</body>
+</html> 

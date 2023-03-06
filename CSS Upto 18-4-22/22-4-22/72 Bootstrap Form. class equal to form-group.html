@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/72.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+</head>
+<body style="border:2px solid black;">
+    
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootstrapForm</title>
+    <link href="./72 Bootstrap Form. class equal to form-group_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+    #htmlform {
+        text-align: center;
+        background-color:pink;
+        width: 1300px;
+    }
+    body {
+        background-color:indianred;
+    }
+
+</style>
+
+
+    <h1 id="htmlform"> My Form Element </h1>
+<br><br> 
+    <form> 
+        <div class="form-group">
+    <label for="fname"> <b>First Name:</b> </label>
+    <input type="fname" class="form-control" id="fname" placeholder="First name here" required="">
+    </div>
+    <label for="lname"> <b>Last Name:</b> </label>
+    <input type="lname" class="form-control" id="lname" placeholder="Last name here" required="">
+    <br><br>
+    <label for="email"> <b>Email:</b></label>
+    <input type="email" id="email" placeholder="Your Email " required="">
+    
+    <label for="password"> <b>Password:</b> </label>
+    <input type="password" id="password" placeholder="*******" required="">
+<br><br>
+    <label for="image"> <b>Image:</b> </label>
+    <input type="image" id="image" value="image">
+    <br><br>
+
+    <label> <b>Your browser:</b> </label>
+    <select>
+        <option value=""> select the browser you're currently using</option>
+        <option value="Chrome"> Chrome </option>
+        <option value="Microsoft"> Microsoft </option>
+        <option value="Opera"> Opera </option>
+    </select>
+<br><br>
+    <label><b> Gender:</b> </label>
+        
+    <label for="male"> Male </label>
+    <input type="radio" id="male" value="male" name="Gender">
+
+    <label for="female"> Female </label>
+    <input type="radio" id="female" value="female" name="Gender">
+
+    <label for="Transgender"> Transgender </label>
+    <input type="radio" id="transgender" value="transgender" name="Gender">
+<br><br>
+    <label for="Telephone"><b> Telephone No.</b> </label>
+    <input type="tel" placeholder="Telephone no. here"> 
+<br><br>
+    <input type="reset">
+
+    <br><br>
+    <input type="checkbox">
+    <input type="submit">
+    <h1 style="font-size: x-large; text-align: center;background-color: pink;"> End </h1>
+    <br><br>
+    
+    <h4>You Might also check the remaining Links here given Below:</h4>
+    <nav style="background-color: yellow; width: 70px;">
+<a href="http://127.0.0.1:5500/contact.html" target="__blank"> First Link </a>
+<br>
+<a href="http://127.0.0.1:5500/web.html" target="__blank"> Third Link </a>
+</nav>
+</form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<!-- Code inject--></body></html>

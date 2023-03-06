@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: indianred;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: inline-flex;
+            text-align: center;
+        }
+
+        nav ul li {
+            padding: 0px 20px;
+        }
+
+        nav ul li:hover {
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+            display: block;
+            overflow: hidden;
+            transition: 0.5s; 
+        }
+        
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+        .menu {
+            text-decoration: none;
+            color: black;   
+            padding: 5px 15px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+        <header>
+            <img style="width:100px;" src="images/ev.jpg" alt="" >
+            <nav>
+            <ul>
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" >Search</a></li>
+                <li><a href="#" >About us</a></li>
+                <input style="padding: 5px 10px;" type="text" value="search" name="search" id="search" >
+            </ul>
+        </nav>
+            <a class="menu" href="#" >Menu</a>
+        </header>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/57%20task.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./57 Task for front page. V.V.V.IMP_files/style.css">
+    <link href="./57 Task for front page. V.V.V.IMP_files/icon" rel="stylesheet">
+    <style>
+        body{
+    text-align: center;
+    background-color: aqua;
+}
+#cloud{
+    position: absolute;
+    left: 390px;
+}
+.link{
+    padding-bottom: 50px;
+    position: sticky;
+    top:0px;
+}
+.text{
+    padding-bottom:200px;
+    font-family: cursive;
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+    <nav class="link">
+        <a href="http://127.0.0.1:5500/contact.html"> Home </a> <i class="material-icons">home |</i>
+        <a href="http://127.0.0.1:5500/index.html/"> Search </a> <i class="material-icons">search|</i>
+        <a href="http://127.0.0.1:5500/web.html"> Contact us </a> <i class="material-icons">contacts|</i>
+</nav>
+    <div class="text">
+    <h2>My name is </h2>
+    <h3>Huzaifa</h3>
+    <h4>I'm a Full Stack Dev</h4>
+</div>
+<img id="cloud" src="./57 Task for front page. V.V.V.IMP_files/cloud.png">
+<br> 
+<img id="mountain" src="./57 Task for front page. V.V.V.IMP_files/mountains(1).png">
+
+</div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

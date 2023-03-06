@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      font-family:'poppins','sans-serif';
+    }
+    .header{
+      background-color : whitesmoke;
+      height: 650px;
+      padding-top: 20px;
+      flex-wrap: wrap;
+      border: 2px solid gainsboro;
+      
+    }
+    .left-navbar{
+      margin-left: 30px;
+      float: left;
+      overflow:visible;
+      list-style-type: none;
+      position: sticky;
+    }
+    .left-navbar a{
+      border: 1px solid rgba(207, 124, 228, 0.822);
+      border-radius: 30px;
+      text-decoration: none;
+      padding: 10px 30px;
+      color: black;
+      
+      
+    }
+    .left-navbar :hover {
+      background-color: rgb(223, 146, 238);
+      transition: 1s;
+    }
+    .right-navbar {
+      float: right;
+      list-style-type: none;
+      margin-right: 20px;
+      overflow: visible;
+      position: sticky;
+    }
+    .right-navbar a{
+      text-decoration: none;
+      color: black;
+      padding: 10px 30px;
+      border:1px solid rgba(207, 124, 228, 0.822);
+      border-radius: 30px;
+    }
+    .right-navbar :hover{
+      background-color: rgba(207, 124, 228, 0.822);
+      transition: 1s;
+    }
+  
+    .logo{
+      position: absolute;
+      top: 80px;
+      left: 150px;
+      height: 80px;
+      width: auto;
+    }
+    #thefuture{
+    font-size: xx-large;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    width: 200px;
+    box-shadow: -5px 3px 9px 2px #4150d8;
+    animation-name: thefuture;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count:1px;
+    }
+    @keyframes thefuture {
+    0%  {left:100px; top:300px;}
+    50%  {left:150px; top:300px;}
+    100% {left:120px; top:300px;}
+    }
+    #ishere{
+      position: absolute;
+      top:350px;
+      left: 150px;
+      width: 200px;
+      padding:0px 7px;
+      box-shadow:-7px 3px 9px 0px #4150d8;
+      animation-name: ishere;
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-iteration-count:1;
+    }
+    @keyframes ishere {
+    0% {left:120px; top:350px;}
+    50%{left:180px; top:350px;}
+    100%{left:150px; top:350px;}
+    }
+    
+    #neuralinkgirl{
+      height: 400px;
+      width: 700px;
+      position: absolute;
+      right: -60px;
+      top: 150px;
+      box-shadow: -10px 10px 5px 2px rgb(197, 188, 189);
+      background-color: rgb(228, 113, 92);
+      animation-name: neuragirl;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      }
+    @keyframes neuragirl {
+    from  {transform: translateX(150px);}
+    /* we are using 0px at the destination (to) so that it will obey our original position written above such as right:10px  */
+    to    {transform: translateX(0px);}
+    }
+    #text2{
+      position: absolute;
+      top: 450px;
+      right: 10px;
+      width: 600px;
+      animation-name: neuragirll;
+      animation-duration: 1s;
+      animation-delay: 2s;
+    }
+    @keyframes neuragirll {
+    from {transform:translateX(150px)}
+    to {transform:translateX(0px)}
+    }
+    #futurebg{
+      position: absolute;
+      top: 295px;
+      left: 50px;
+      height: 100px;
+      width: 50px;
+      border: 1px solid blue;
+      background-color: rgb(69, 93, 201);
+      z-index: 0;
+      box-shadow: 0px 0px 2px #4150d8;
+      animation-name:futurebg;
+      animation-duration: 5s;
+      animation-delay: 1s;
+      animation-direction: alternate;
+    }
+    @keyframes futurebg {
+      0% {left:50px;top: 295px;}
+      25% { left:450px;top: 295px;}
+      100% { left: 50px; top: 295px;}
+    }
+    #text1{
+      position: absolute;
+      top: 100px;
+      left: 38px;
+      width: 500px;
+      font-size: x-large;
+      animation-name:text1;
+      animation-duration: 3s;
+      animation-delay:4s;
+      animation-direction: alternate;
+      letter-spacing: 4px;
+    }
+    @keyframes text1 {
+      0% {transform:translateY(-210px)}
+      100% {transform:translateY(0px);}
+      
+    }
+
+    #joinusline{
+      position: absolute;
+      top: 500px;
+      left: 50px;
+      border: 2px solid black;
+      width: 400px;
+    }
+    #joinus{
+      position: absolute;
+      top: 520px;
+      left: 50px;
+      font-size: xx-large;
+    }
+    #forward{
+      animation-name: forward;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function:ease-in-out;
+    }
+    @keyframes forward {
+      from {transform:translateX(-10px);}
+      to {transform:translateX(4px);}
+    }
+    #joinus2{
+      position: absolute;
+      top: 520px;
+      left:220px;
+      font-size: xx-large;
+    }
+    #forward2{
+      animation-name: forward2;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    @keyframes forward2 {
+      from { transform: translateX(-10px);}
+      to { transform: translateX(4px);}
+    }
+    .mainslider{
+      overflow:hidden;
+      height: 650px;
+      
+      background-color: wheat;
+      border: 2px solid black;
+    }
+    .mainslider figure{
+      position: relative;
+      width: 10000px;
+      margin: 0;
+      left: 0;
+      animation-duration :10s; 
+      animation-timing-function: ease-in-out;
+      animation-name: mainslider;
+      animation-iteration-count: infinite;
+    }
+    .mainslider figure img{
+      float: left;
+      border: 2px solid black;
+    }
+    @keyframes mainslider {
+      0% {
+        left: 0%;
+      }
+      25%{
+        left: -100%;
+      }
+      50%{
+        left: -200%;
+      }
+      75%{
+        left: -300%;
+      }
+    }
+    .secondslider{
+      overflow: hidden;
+      height: 650px;
+      margin-top: 10px;
+      background-color: wheat;
+      border: 2px solid black;
+    }
+    .secondslider figure{
+      position: relative;
+      width: 10000px;
+      margin: 0;
+      left:0;
+      animation-duration :20s; 
+      animation-timing-function: ease-in-out;
+      animation-name: secondslider;
+      animation-iteration-count: infinite;
+    }
+    .secondslider figure img{
+      float: left;
+      border: 2px solid black;
+    }
+    @keyframes secondslider {
+      0% {
+        left: 0;
+      }
+      30%{
+        left: -100%;
+      }
+      50%{
+        left: -200%;
+      }
+      60%{
+        left: -300%;
+      }
+      75%{
+        left: -400%;
+      }
+    }
+    .explain{
+      height: 750px;
+      padding-top: 30px;
+      background-color: whitesmoke;
+      margin-bottom: 5px;
+      border: 3px solid lightpink;
+    }
+    #surgicalmachinebackground {
+      height: 300px;
+      background-color: antiquewhite;
+    }
+    .benefits{
+      height: 630px;
+      background-image: url(images/chip8.png);
+      background-repeat: no-repeat;
+      background-size:1348px 640px;
+      border: 2px solid #4150d8 ;
+    }
+    .design{
+        height: 630px;
+        background: radial-gradient(circle, rgba(170,158,221,1) 30%, rgba(252,70,107,1) 100%);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+
+      <ul>
+        <li class="left-navbar">
+          <a href="#" >HOME</a>
+          <a href="#" >FUTURE</a>
+          <a href="#" >APPROACH</a>
+        </ul>
+        </li>
+
+        <div>
+        <ul>
+        <li class="right-navbar">
+          <a href="#">SCIENCE</a>
+          <a href="#">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+    <h2 style="position: absolute;left: 570px;opacity: 0.7;cursor:default;box-shadow: 9px -4px 0px 0px #aaaaaa;"><i class="material-icons" >psychology</i> ＢｒａｉｎＬｉｎｋｅｄ</h2>
+    <br><br>
+    <p style="border: 2px solid gainsboro;box-shadow: 0px -2px 1px #aaaaaa;"> </p>
+      <h1 id="text1"><b>"BrainLinked is an Neurotechnology company that will Develops Implantable Brain-Machine Interfaces."<b></h1>
+      <div id="futurebg"> </div>
+      <div id="joinusline">  </div>
+      <div id="joinus"> 
+        <h3><b>Join Us <i id="forward" class="material-icons">arrow_forward_ios_new</i> <b></h2>
+      </div>
+      <div id="joinus2">
+        <h3><b>New Update <i id="forward2" class="material-icons">arrow_forward_ios_new</i> <b></h2>
+      </div>
+      <h1 id="thefuture">𝐓𝐡𝐞 𝐅𝐮𝐭𝐮𝐫𝐞 </h1>
+        <h1  id="ishere" >  𝐈𝐬 𝐇𝐞𝐫𝐞</h1>
+
+      <img id="neuralinkgirl"  src="images/My project3.3.png">
+      <h3 id="text2" style="font-weight: 600;"><i>Purpose: Neural implant that will let you control a computer or mobile device anywhere you go.
+        Micron-scale threads are inserted into areas of the brain that control movement. Each thread contains many electrodes and connects them to an implant, the Link </i></h3>
+</div>
+
+  <div class="mainslider">
+    <img style="height: 300px;width: 600px;z-index: 2;position: absolute;top: 495px;left: 680px;" src="images/logobrainlinked.png">
+    <h2 style="text-align:center;font-size:xx-larger;letter-spacing:7px;color: black;"><b>1) CHIP Used for Implantation<b></h2>
+    <figure>
+        <img style="width: 1330px;height: 620px;" src="images/chip10.png" >
+        <img style="width: 1330px;height: 620px;" src="images/chip4.jpeg" >
+        <img style="width: 1330px;height: 620px;" src="images/neura1.png" >
+        <img style="width: 1330px;height: 620px;" src="images/neura2.png" >
+    </figure>
+  </div>
+<div class="secondslider">
+  <h2 style="text-align: center;font-size:x-large;letter-spacing: 7px;color: black;">2) CHIP Attached to Neural AI.</h2>
+  <figure>
+    <img style="width: 1330px;height: 630px;" src="images/chip1.jpg" >
+    <img style="width: 1330px;height: 630px;" src="images/chip3.jpg" >
+    <img style="width: 1330px;height: 630px;" src="images/monkey.jpg" >
+    <img style="width: 1330px;height: 630px;" src="images/pig.jpg" >
+    <img style="width: 1330px;height: 630px;" src="images/chip2.jpg" >
+  </figure>
+</div>
+<div class="explain">
+      <h2 style="text-align: center;border:2px solid wheat ;background-color: wheat;border: 2px solid black;">3) SURGICAL ROBOTIC MACHINE</h2>
+      <img style="width: 400px;margin-top:50px;margin-left:220px;border: 2px solid whitesmoke;box-shadow: 4px 5px 30px #aaaaaa; transform:rotate(9deg);" src="images/surgery2.jpg">
+      <p style="width: 400px;margin-left: 650px;position: absolute;top: 2250px;letter-spacing: 2px;font-size: large;"><u> Reliabilty:</u>  The Threads on the Link are so fine and flexible that they can't be inserted by the human hand instead Robotic system that the Neurosurgeon can use to reliably and efficiently insert these threads exactly where they need to be.</p>
+      <br><br>
+      <img style="width: 400px;height: 300px;margin-top:0px;float: right;margin-right:250px;border: 2px solid whitesmoke;box-shadow: -4px 5px 30px #aaaaaa;transform: rotate(-7deg);" src="images/surgerymachine1.jpg">
+      <p style="width: 400px;margin-left: 150px;position: absolute;top: 2500px;letter-spacing: 2px;font-size: large;"><u>Neurons Detection:</u> We place electrodes near neurons in order to detect action potentials. Recording from many neurons allows us to decode the information represented by those cells. In the movement-related areas of the brain, for example, neurons represent intended movements. </p>
+<div id="surgicalmachinebackground">
+
+</div>
+   
+</div>
+<div class="benefits"> 
+  <p style="text-align: center;font-size: x-large;"><b>3)Neural Benefits</b></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/89.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- JS VARIABLES  -->
+   <!-- in the VAR you can also use LET , no diff. b/w them. . Let taking place of var is in the next topic. so coverung this into the 2 topics.  -->
+   <p id="demo">7</p>
+
+   <script>
+       var x,y,z;
+       x=2;
+       y=3;
+       z=x+y;
+
+       document.getElementById('demo').innerHTML=(z);
+   </script>
+
+    <!-- 2) Now a JS constant under the Variables Lolzz  --> 
+   <!-- one is working at one time  -->
+
+   <p id="demo">
+    
+    </p>
+
+    <script>
+    const price1 = 5;
+    const price2 = 2;
+    total=price1+price2; 
+    document.getElementById('demo').innerHTML=(total);
+    </script> 
+
+<!-- 3) JS Data storing  -->
+    <p id="demo2">3.14 pai pai ka Hisab de dia</p>
+    <script>
+    const PI=3.14;
+    let person1 =  "pai pai ka" ;
+    let person2 = "Hisab de dia";
+    statement= PI +" " + person1 + " " + person2;
+
+
+    document.getElementById('demo2').innerHTML=
+    (statement);
+    </script>
+
+<!-- 4) Js Arithmetic  -->
+    <p id="demo3"></p>
+
+    <script>
+    let x = 5 + 2 + 3;
+    document.getElementById("demo3").innerHTML = x;
+    </script>
+
+<!-- 5) Something weird #1 occured right below the arithmetic , when the strings is on the first and numericals  are in the right of strings    -->
+    <p id="demo4"></p>
+
+    <script>
+    let z = "5" + 2 + 3;
+    document.getElementById("demo4").innerHTML = z;
+    </script>
+
+<!-- 5.1 weird #2 in case the string is in the last then the numbers on the left of the strings will be calculated -->
+    <p id="demo5"></p>
+
+    <script>
+    let y = 2 + 3 + "5";
+    document.getElementById("demo5").innerHTML = y;
+    </script>
+
+<!-- 6) Using Dollars $$$ in JS ,, oh yes baby $$$.  -->
+    <p id="demo6">Ernest, SwanX, BrainLinked, Azurum. </p>
+
+    <script>
+    let $ = "Ernest";
+    let $$ = "SwanX";
+    let $$$ = "BrainLinked";
+    let $$$$ = "Azurum";
+
+    document.getElementById('demo6').innerHTML=($ + ", " + $$ + ", " + $$$ + ", " + $$$$ + ". ");
+    </script>
+
+<!-- 7) using UnderScore  -->
+    <p>The underscore is treated as a letter in JavaScript names.</p>
+
+    <p id="demo7">7</p>
+
+    <script>
+    let _x = 2;
+// ooooo what ,,, number used attached to the _ = 5 , amazing ???
+    let _100 = 5;     
+
+    document.getElementById("demo7").innerHTML = _x + _100;
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

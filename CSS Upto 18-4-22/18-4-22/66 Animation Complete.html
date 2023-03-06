@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/66.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: sample;
+            animation-duration: 4s;
+            position: relative;
+            /* new thing in case for late animation  */
+            /* you can also use the negative seconds to show that there already been that seconds gone  */
+            animation-delay: 2s;
+            /* it means for how many times you want animation to be repeated and infinity available too */
+            animation-iteration-count: 2; 
+            /* in order to start it in reverse direction  */
+            animation-direction: reverse;
+            /* jis position se move ho rhi usi position se wapis aiy gi, alternates and alternates-reverse kehte hain  */
+            animation-direction:alternate;
+            /* animation-fill-mode: 'forwards', 'backwards' and  'both' available */
+            animation-fill-mode: both;
+
+            /* shorthand property lolzz */
+            /* div {  */
+            /* animation: example 5s linear 2s infinite alternate; } */
+
+        }
+        /* keyframes is must for everything */
+        @keyframes sample {
+            /* you can also do "from {background-color:red;}" */
+            /* "to {background-color: pink;}" */
+            /* from {top: 0px;background-color:red;} */
+            /* to {top: 200px; background-color: blue;} */
+            0%  { background-color: red; left: 0px;top: 5px;}
+            25% { background-color: pink;left: 200px;top: 5px;}
+            50% { background-color: indianred;left: 200px;top: 50px;}
+            75% { background-color: indigo;left: 0px;top: 50px;}
+            100% { background-color: black;left: 0px;top: 5px;}
+            /* percentage usually refers to the animation duration  */
+        }
+</style>
+</head>
+<body>
+
+<h3>No need for text in order to make a css without text just an empty div</h3>
+    <div></div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

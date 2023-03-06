@@ -1,0 +1,6 @@
+div ~ p {
+    background-color: blueviolet;
+}
+a {
+    border: 2px solid black;
+}

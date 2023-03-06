@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/69.bootstrap.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./69 own made nav bar, links, tab and play button and rules_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <link href="./69 own made nav bar, links, tab and play button and rules_files/icon" rel="stylesheet">
+  </head>
+  <body>
+      <!-- nav link for the space between links, and ye mein khud bna rha hun  -->
+      <!-- udong nav is necessary if not it will be in vertical position  -->
+      <!-- p-3 is padding pt-3 is padding but links wil be at bottom and m-2 is margin -->
+    <div class="nav nav-tabs bg-primary pt-3">
+     <a class=" nav-link text-light" area-current="page" href="http://127.0.0.1:5500/contact.html"> About </a>
+     <a class=" nav-link text-light" href="http://127.0.0.1:5500/index.html/"> Link </a>
+     <a class="nav-link text-light" href="http://127.0.0.1:5500/web.html"> Search </a>
+    </div>
+      <br>
+      <!-- px-4 for left and right padding  -->
+      <button class="btn btn-primary m-2 px-2">Play <i class="material-icons">play_arrows</i></button> 
+      <br><br>
+      <!-- for background-color use bg-warning  -->
+      <!-- for border around any text or anything use border border-5   -->
+      <!-- for the color of border just write border border-primary  -->
+      <!-- for padding just simply use the padding-30 for inside padding  -->
+      <div class=" bg-danger border border-5 padding-30 border border-primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

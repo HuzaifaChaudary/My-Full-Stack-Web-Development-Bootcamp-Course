@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- STAR PATTERN JS  -->
+    <script>
+        let n = 5 ;  // row or column count
+        string = " " ;  // defining an empty string
+
+        for(let i = 0 ; i < n ; i++ ) {  // external loop
+            for( let j = 0 ; j < n ; j++ ) {   // internal loop
+                    string += "*" ;
+            }
+            // newline after each row 
+            string += "<br>" ;
+        }
+
+        document.write(string) ;  // printing outside the box with 3rd line of { } unlike 99.html
+    </script>
+
+     <!-- Hollow square pattern  -->
+    <script>
+let t = 5; // row or column count
+// defining an empty string
+let string = "";
+
+for(let i = 0; i < t; i++) { // external loop
+  for(let j = 0; j < t; j++) { // internal loop
+    if(i === 0 || i === t - 1) {
+      string += "*";
+    }
+    else {
+      if(j === 0 || j === t - 1) {
+        string += "*";
+      }
+      else {
+        string += " ";
+      }
+    }
+  }
+  // newline after each row
+  string += "<br>";
+}
+// printing the string
+document.write(string);
+
+</script>
+
+<script>
+let r = 5;
+let stringo = "";
+for (let i = 1; i <= r; i++) {
+  // printing spaces
+  for (let j = 0; j < r - i; j++) {
+    string += " ";
+  }
+  // printing star
+  for (let k = 0; k < i; k++) {
+    stringo += "*";
+  }
+  stringo += "<br>";
+}
+document.write(stringo);
+            
+    </script>
+
+</body>
+</html>

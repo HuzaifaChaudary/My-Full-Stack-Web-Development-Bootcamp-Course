@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"d> </p>
+    <p id="demo2"d> </p>
+    <p id="demo3"d> </p>
+    <p id="demo4"d> </p>
+    <p id="demo5"d> </p>
+    <p id="demo6"d> </p>
+   
+    <script> 
+        // 1) simple 
+        function myFunction(a,b) {
+        return (a*b);
+    }
+        document.getElementById('demo1').innerHTML = myFunction(4,5);
+
+        // 2) by using let or var 
+        // we'll not write let x = product() ; inside the function product { }. but instead we'll outside of it. prefer to write it on the top 
+        let x = product(8,9) ;
+        function product(a,c) {
+            return (a*c) ;
+            // so if we are using let we'll not only let x = product(); (taking product from function) but also write the number in it instead of a,b 
+            // coz if we are already giving the x = product() then writing x in innerHTML then we do we need to writenumbers. so here we'll write it in let x = product (8,9);
+            
+        }
+        // when doing let or var x = product(8,9) ... dont write myFunction or function name i.e product in innerHTML with near like we did in demo1  (x) 
+        document.getElementById('demo2').innerHTML = (x) ;
+
+        // 3.1) using console.log() with a,b for numerical. 
+        
+        function myFunction(a,b) {
+            return (a/b)
+        }
+        console.log(myFunction(25,5)); // Worked on inspect > Console. !
+
+        // 3.2) NOW using the string in console.log() !!!!
+
+        // so the real question is can we use the let or var when we have to display text or  numerical using console.log() ???
+        //  can we write the string or text in function myFunction ( any string) ? and string in return (any string) ?
+        // im talking about this.. var y = myFunction(any string); should we write it ?
+        //  can we write text or strings e.g 'Huzi' in console.log() ,, if yes then how  im now using myFunction(a,b) insted of Huzi in it :( ANS : You can just write the string in console.log(Huzi) 
+        // do console.log() need <p id=demo > "Absolutely Not" </p>
+
+        function myFunction() {
+
+        } 
+        // which 2 side's name should be same ? ANS : No need to write string or text in myFunction as they dont appear in it ... it is only used for task, calculating.
+        console.log("Huz")
+
+        // 4) Nested Function  (JUST for MCQS in Midterms)
+        function add() { // we are writing a function and one more function i.e 'plus()' inside the main functionc'add()'
+            let counter = 0 ; // what counter will actually do ? ANS : 
+            function plus() {
+                counter +=1 ; // ? why ? whats the purpose ? :)  ANS : we're writing it one time only instead of " counter = counter +  1 "
+            }
+            plus () ; // whats the purpose of writing 2nd function's name "plus()" here again in this line ? ANS : to Call it. 
+            return counter ; // why using counter as a return ? 
+        }  // how to write numerical in order to run this NESTED Function . pls solve it BELOW .. its not coming its just an MCQ. 
+
+        // 5) Function Literal
+        var func = function (x,y) {
+            return (x*y);
+        }
+        function secondFunction(){
+            var result ;
+            result = func(a,10);
+            document.write(result)
+        }
+        document.getElementsById('demo3').innerHTML = seconfFunction() ;
+
+     </script>
+</body>
+</html>

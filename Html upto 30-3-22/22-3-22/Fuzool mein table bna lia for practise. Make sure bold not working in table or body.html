@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/28.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th, td {
+            border: 2px solid black;
+            border-collapse:collapse;
+        }
+        #intro {
+            background-color: aqua;
+            font-family: cursive; 
+            font-size: x-large;
+        }
+        #a {
+            background-color: pink;
+            color: red;
+        }
+        #b {
+            background-color: yellow;
+            color: blue;
+            font-size:xx-large;
+        }
+        #c {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+      #if we want to bold, strong or italic any word
+              #in order to make all the lines bold 
+              #font doesn't help it through font: bold etc ?
+              we can use font just for size and cursive but not 
+             #for bold , strong, mark, italic etc?
+        <b>
+            </b><table>
+        <tbody><tr id="intro">
+            <th>Year</th>
+            <th>Study</th>
+            <th>College</th>
+        </tr>
+        <tr id="a">
+            <td>2020</td>
+            <td>2nd Yr</td>
+            <td>GCU</td>
+        </tr>
+        <tr id="b"><td> 2021 </td><td> BS </td><td> PU Lahore </td></tr>
+        <tr id="c"> <td> 2022 </td>
+            <td> Full Stack Web Dev </td>
+            <td> PU Lahore </td>
+        </tr> 
+    </tbody></table><b>
+
+    <audio controls="" loop="">
+        <source src="audio/Drake_-_Gods_Plan_(Lyrics).mp3" type="audio/mpeg" <="" audio="">
+<br><br>
+    <video style="height:300px;width:200px;" controls="">
+        <source src="video/Ig.mp4" type="video/mp4">
+    </video>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</audio></b></body></html>

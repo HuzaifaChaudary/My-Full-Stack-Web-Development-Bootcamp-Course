@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/76.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./76 utilities ka text and content ka typography_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <h1>TEXT ALIGNMENT </h1>
+    <p class="text-start">Huzaifa Chaudary Sharry Ali Harry Mohsin Mubashir Abdullah Dawood</p>
+<p class="text-center">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+<p class="text-end">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+<br><br>
+<h2>for different layout of screens when drag</h2>
+<p class="text-sm-start">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+<p class="text-md-start">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+<p class="text-lg-start">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+<p class="text-xl-start">Huzaifa Chaudary Sharry Ali Hsrry Mohsin Mubashir Abdullah Dawood</p>
+    <br><br>
+    <h3>Text wrapping</h3>
+    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+        This text should wrap.
+      </div><br>
+      <div class="text-nowrap bd-highlight" style="width: 8rem;">
+        This text should overflow the parent.
+      </div>
+      <h1> Now Content&gt;Typography</h1>
+      <p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p>
+<br><br>
+<h1>Now Display </h1>
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
+<h1>there a diff. b/w heading and display</h1>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

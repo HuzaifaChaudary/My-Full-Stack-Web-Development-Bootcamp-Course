@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/contact.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>First Link</title>
+    <style>
+        #one {
+            background-color: pink;
+            width: 400px;
+        }
+     
+        .links {
+            background-color: aqua;
+            width: 200px;
+        }
+        #heart {
+            background-color: white;
+        }
+        #sec i{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .third i{
+            background-color: indianred;
+            border: 2px solid black;
+        }
+       .third {
+           background-color: yellow;
+           width: 400px;
+       }
+
+    </style>
+    <link href="./Nav Bar_files/icon" rel="stylesheet">
+</head>
+<body style="border:2px solid black; width:800px;height: 400px;">
+    <nav>
+    <h3 id="one" style="font-size: x-large;"> Welcome to the First Website Page <i class="material-icons"> favorite </i></h3>
+        <p id="sec" style="font-size: large;"><b> Here are the Nav Bar &amp; Links of Another Two Website Pages <b> <i class="material-icons">  list </i></b></b></p><b><b>
+        <h4> These are Given Below: </h4>
+    <nav class="third">
+            <a href="http://127.0.0.1:5500/index.html/"> Home <i class="material-icons">home</i> </a>
+            <a href="http://127.0.0.1:5500/order.html"> Search </a> <i class="material-icons">search</i>
+            <a href="http://127.0.0.1:5500/web.html"> contact </a> <i class="material-icons">contacts</i>
+</nav><table>
+        
+</table>
+</b></b></nav><b><b>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</b></b></body></html>

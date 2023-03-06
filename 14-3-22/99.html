@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JS FOR LOOP -->
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    <script>
+        const cars = [ "AUDI", "BMW", "TOYOTA"] ; // dont forget to put ";" at the end.
+        for (let i = 0; i < cars.length; i++ ) { // here we're using the let instead of int in JS like we studied in C++ ...!
+        document.getElementById('demo1').innerHTML = cars + "<br>"; // here no need to write any cout :)  
+    }
+    
+
+    var x = 0 ;
+    for (i= 10; i >= x ; i--) {
+    document.write(i + "<br>")
+    }
+    
+    
+    for (var i = 0 ; i <= 10 ; i++)  
+    document.write(i + "<br>");
+
+    // using var .
+    var y = 2 ;  // no use of this line as written by maam .
+    for(var i=0; i < 10 ; i++ ) {  
+        document.write(i + "<br>") ;
+    }
+    
+    // using let .
+    let z = 1 ;  // Again no use of this line as was written by maam .
+    for (let z = 0 ; z < 10 ; z++){
+        document.write(z + "<br>") ;
+    }
+
+    const person = {
+        firstName : "Sami" ,
+        secondName : "Khan" , 
+        address : "248-D Township",
+    }
+    for (c in person ) {  // "c" is a rule which refers to all the content we made in person are shifted in c. C means everything wrote included in itself and no other character can take place "c". Its Special.
+        document.write(person[c] + "<br>") ; 
+    }
+    // for ARRAYS in LOOP . 
+    const numbers = [50,460,98] ;       //not working.
+    for (y in numbers) {
+        document.write(numbers[y]) + "<br>" ;
+    }
+
+    // for each loop .
+       let text2 = " " ;  // not working
+    const fruit = ["Apple" , "Orange" , "Cherry" , "Strawberry" , "Guava" ] ;  //not working, maybe incomplete.
+    fruit.forEach(myFruit + "<br>") ;
+    </script>
+
+    <!-- // nested loop  -->
+    <script>
+
+    for(let i = 10 ; i <= 15 ; i++ ) { // external loop .
+        for(y = 0 ; y <= i ; y++) { // internal loop .
+            document.write(y + "<br>") ;
+        }
+        document.write(i + "<br>") ;
+    }
+    // WHILE LOOP .
+    let s = 0 ;
+    let j = " " ;
+    while ( s < 10 ) {
+        j += "the number is " + s + "<br>" ;
+        s++ ;
+    }
+    document.getElementById('demo3').innerHTML = j ;
+
+    // DO WHILE LOOP .
+    let a = 10 ;
+    let f = " " ;
+    do {
+        f += "<br> the number is " + a ;
+        a-- ; 
+    } while ( a > 0 ) ;
+    document.write(f) ;
+
+
+    for (let i = 10; i > 0; i--){
+        document.write(i + "<br>")
+    }
+    
+    </script>
+</body>
+</html>

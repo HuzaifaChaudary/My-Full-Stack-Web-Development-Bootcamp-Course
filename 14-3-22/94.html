@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // Defining a new constructor function 
+    
+    function Person(name,age,city) {
+    this.name = name ;
+    this.age = age ;
+    this.city = city ;
+}
+function Car(company,model,year,owner) {
+    this.company = company ;
+    this.model = model ;
+    this.year = year ;
+    this.owner = owner ;
+}
+// creating the object !!
+let Robert = new Person("Robert Downey Jr.",57,"Los Angeles, CA. ");
+let ErnestXs = new Car("Ernest","S",2030,"Uzaifa Iftikhar");
+
+document.write(Robert.name + "<br>" + Robert.age + "<br>" + Robert.city + "<br><br>")
+document.write(ErnestXs.company+ "<br>" + ErnestXs.model + "<br>" + ErnestXs.year + "<br>" + ErnestXs.owner )
+
+
+//constructor
+ function huz(car, model){
+    this.car = car;
+    this.model=model;
+ }
+
+ let Person1 = new huz ("Ernest", 2028);
+
+ document.write(Person1.car + " " + Person1.model)
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
